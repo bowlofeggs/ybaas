@@ -13,7 +13,7 @@ description = """\
               complexity of installing and using the yubibomb CLI tool? Now you can use yubibomb as
               a service!"""
 keywords = ["yubikey", "random", "game", "yubibomb", "microservice"]
-categories = ["authentication", "microservices", "cryptography", "games"]
+categories = ["authentication", "cryptography", "games"]
 edition = "2018"
 
 [dependencies]
