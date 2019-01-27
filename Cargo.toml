@@ -2,6 +2,13 @@
 name = "ybaas"
 version = "0.0.0"
 authors = ["Igor Gnatenko <ignatenkobrain@fedoraproject.org>", "Randy Barlow <randy@electronsweatshop.com>"]
+license = "GPL-3.0"
+description = """\
+              Don't you love when you accidentally tap your Yubikey when you have your IRC client \
+              in focus and you send 987947 into Freenode? Want to be able to have that experience \
+              without having to reach all the way over to your laptop's USB port? Don't want the \
+              complexity of installing and using the yubibomb CLI tool? Now you can use yubibomb as
+              a service!"""
 edition = "2018"
 
 [dependencies]
