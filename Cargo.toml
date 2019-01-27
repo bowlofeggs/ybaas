@@ -1,0 +1,9 @@
+[package]
+name = "ybaas"
+version = "0.0.0"
+authors = ["Igor Gnatenko <ignatenkobrain@fedoraproject.org>", "Randy Barlow <randy@electronsweatshop.com>"]
+edition = "2018"
+
+[dependencies]
+yubibomb="0.2"
+warp="0.1"
