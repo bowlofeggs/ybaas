@@ -27,10 +27,12 @@ use yubibomb::hotp;
 /// $ curl http://localhost:3030/hotp
 /// 720502
 /// ```
-fn main() {
+#[tokio::main]
+async fn main() {
     let token = path!("hotp")
         .map(|| format!("{}", hotp()));
 
     warp::serve(token)
-        .run(([0, 0, 0, 0], 3030));
+        .run(([0, 0, 0, 0], 3030))
+        .await;
 }

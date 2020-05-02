@@ -17,5 +17,9 @@ categories = ["authentication", "cryptography", "games"]
 edition = "2018"
 
 [dependencies]
-yubibomb="0.2"
-warp="0.1"
+yubibomb = "0.2"
+warp = "0.2"
+
+[dependencies.tokio]
+version = "0.2"
+features = ["macros"]
