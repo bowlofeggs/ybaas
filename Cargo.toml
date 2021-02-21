@@ -1,6 +1,6 @@
 [package]
 name = "ybaas"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Igor Gnatenko <ignatenkobrain@fedoraproject.org>", "Randy Barlow <randy@electronsweatshop.com>"]
 license = "GPL-3.0"
 readme = "README.md"
