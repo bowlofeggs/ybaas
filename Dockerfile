@@ -1,12 +1,19 @@
-FROM registry.fedoraproject.org/fedora:33
+# This Dockerfile is for Dockerhub
+FROM registry.fedoraproject.org/fedora:33 as builder
 LABEL maintainer="Randy Barlow <randy@electronsweatshop.com>"
 
 RUN dnf upgrade -y
-RUN dnf install -y cargo clippy rustfmt
-# This is needed for cargo-audit
-RUN dnf install -y openssl-devel
-RUN cargo install cargo-audit
-# This is useful for finding all the licenses of the bundled libraries
-RUN cargo install cargo-license
+RUN dnf install -y cargo
+RUN mkdir /ybaas
+COPY Cargo.toml /ybaas/
+COPY Cargo.lock /ybaas/
+COPY src /ybaas/src
+RUN cd /ybaas && cargo build --release
 
-CMD ["bash"]
+# Build the final image
+FROM registry.fedoraproject.org/fedora:33
+
+COPY --from=builder /ybaas/target/release/ybaas /usr/local/bin/ybaas
+
+EXPOSE 3030/tcp
+CMD ["/usr/local/bin/ybaas"]
