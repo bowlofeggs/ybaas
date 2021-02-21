@@ -1,4 +1,4 @@
-/* Copyright © 2019 Igor Gnatenko and Randy Barlow
+/* Copyright © 2019, 2021 Igor Gnatenko and Randy Barlow
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@ use yubibomb::hotp;
 /// ```
 #[tokio::main]
 async fn main() {
-    let token = path!("hotp").map(|| format!("{}", hotp()));
+    let token = path!("hotp").map(hotp);
 
     warp::serve(token).run(([0, 0, 0, 0], 3030)).await;
 }
