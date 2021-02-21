@@ -20,7 +20,7 @@ This project is available on [crates.io](https://crates.io/crates/ybaas).
 example:
 
 ```
-$ podman run -d --net=host bowlofeggs/ybaas:latest
+$ podman run -d --net=host docker.io/bowlofeggs/ybaas:latest
 $ curl http://localhost:3030/hotp
 375633
 ```
