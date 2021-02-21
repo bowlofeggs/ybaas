@@ -21,5 +21,5 @@ yubibomb = "0.2"
 warp = "0.2"
 
 [dependencies.tokio]
-version = "0.2"
-features = ["macros"]
+version = "1.2"
+features = ["macros", "rt-multi-thread"]
