@@ -18,7 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.*/
 use warp::{path, Filter};
 use yubibomb::hotp;
 
-
 /// Returns an HOTP token over GET requests.
 ///
 /// # Examples
@@ -29,10 +28,7 @@ use yubibomb::hotp;
 /// ```
 #[tokio::main]
 async fn main() {
-    let token = path!("hotp")
-        .map(|| format!("{}", hotp()));
+    let token = path!("hotp").map(|| format!("{}", hotp()));
 
-    warp::serve(token)
-        .run(([0, 0, 0, 0], 3030))
-        .await;
+    warp::serve(token).run(([0, 0, 0, 0], 3030)).await;
 }
