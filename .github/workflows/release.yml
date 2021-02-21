@@ -10,6 +10,21 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      # See https://stackoverflow.com/questions/58177786/get-the-current-pushed-tag-in-github-actions
+      - name: Set RELEASE_VERSION
+        run: echo "YBAAS_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push to DockerHub
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          file: Dockerfile
+          push: true
+          tags: "bowlofeggs/ybaas:latest,bowlofeggs/ybaas:${{ env.YBAAS_VERSION }}"
       - name: Check out the code
         uses: actions/checkout@v2
       - name: Run build
