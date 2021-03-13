@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.4
+
+* Update generic arracy for
+  [RUSTSEC-2020-0146](https://rustsec.org/advisories/RUSTSEC-2020-0146.html)
+* Update other dependencies.
+
+
 ## 0.0.3
 
 * Update dependencies.
