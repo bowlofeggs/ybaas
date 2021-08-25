@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.8
+
+* Update hyper for [RUSTSEC-2021-0078](https://rustsec.org/advisories/RUSTSEC-2021-0078) and
+  [RUSTSEC-2021-0079](https://rustsec.org/advisories/RUSTSEC-2021-0079).
+* Update other dependencies.
+
+
 ## 0.0.7
 
 * Update dependencies.
