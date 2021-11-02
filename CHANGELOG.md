@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.10
+
+* Address [RUSTSEC-2020-0071](https://rustsec.org/advisories/RUSTSEC-2020-0071).
+* Update dependencies.
+
+
 ## 0.0.9
 
 * Update dependencies.
