@@ -14,7 +14,7 @@ description = """\
               a service!"""
 keywords = ["yubikey", "random", "game", "yubibomb", "microservice"]
 categories = ["authentication", "cryptography", "games"]
-edition = "2018"
+edition = "2021"
 
 [dependencies]
 yubibomb = "0.2"
