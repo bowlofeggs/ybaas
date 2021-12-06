@@ -941,9 +941,9 @@ dependencies = [
 
 [[package]]
 name = "yubibomb"
-version = "0.2.6"
+version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f88287d0fc35804b93a3559d3fa519545013ba7339c65593a061f9f129de775"
+checksum = "240af57461673524ee284ed87ca64feed9bbc51a3a07658629e693197acba857"
 dependencies = [
  "rand",
 ]
