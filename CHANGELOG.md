@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.12
+
+* Update Dockerfile to Fedora 35.
+
+
 ## 0.0.11
 
 * Update dependencies.
