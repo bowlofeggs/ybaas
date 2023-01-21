@@ -22,7 +22,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          file: Dockerfile
+          file: Containerfile
           push: true
           tags: "bowlofeggs/ybaas:latest,bowlofeggs/ybaas:${{ env.YBAAS_VERSION }}"
       - name: Check out the code

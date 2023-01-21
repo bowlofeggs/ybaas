@@ -30,7 +30,7 @@ clippy:  ## Run cargo clippy
 
 container:  ## Build the container
 	mkdir -p $(CURDIR)/.cache
-	podman build --pull -t $(podman_tag) $(podman_volume) --force-rm=true -f Dockerfile.devel $(CURDIR)
+	podman build --pull -t $(podman_tag) $(podman_volume) --force-rm=true -f Containerfile.devel $(CURDIR)
 
 doc:  ## Run cargo doc
 	cargo doc --no-deps

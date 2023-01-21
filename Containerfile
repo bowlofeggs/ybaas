@@ -1,4 +1,4 @@
-# This Dockerfile is for Dockerhub
+# This Containerfile is for Dockerhub
 FROM registry.fedoraproject.org/fedora:37 as builder
 LABEL maintainer="Randy Barlow <randy@electronsweatshop.com>"
 
