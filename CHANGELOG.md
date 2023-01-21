@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.15
+
+* Update Rust dependencies.
+* Update Containers to Fedora 37.
+
+
 ## 0.0.14
 
 * Update dependencies.
