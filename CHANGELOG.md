@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.16
+
+* Run cargo update
+* [CVE-2023-26964](https://nvd.nist.gov/vuln/detail/CVE-2023-26964): Update h2 for DoS
+* [RUSTSEC-2023-0018](https://rustsec.org/advisories/RUSTSEC-2023-0018): Remove remove_dir_all
+
 ## 0.0.15
 
 * Update Rust dependencies.
