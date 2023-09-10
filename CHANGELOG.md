@@ -2,7 +2,8 @@
 
 ## 0.0.17
 
-* Run cargo update
+* Define minimum supported Rust version to be 1.66.
+* Run cargo update.
 
 ## 0.0.16
 
