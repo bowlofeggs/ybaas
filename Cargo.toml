@@ -15,6 +15,7 @@ description = """\
 keywords = ["yubikey", "random", "game", "yubibomb", "microservice"]
 categories = ["authentication", "cryptography", "games"]
 edition = "2021"
+rust-version = "1.66"
 
 [dependencies]
 yubibomb = "0.2"
