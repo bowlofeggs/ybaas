@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.17
+
+* Run cargo update
+
 ## 0.0.16
 
 * Run cargo update
