@@ -7,6 +7,7 @@
   * [RUSTSEC-2024-0332](https://rustsec.org/advisories/RUSTSEC-2024-0332.html)
 * Update `mio` for [RUSTSEC-2024-0019](https://rustsec.org/advisories/RUSTSEC-2024-0019.html).
 * Update other dependencies.
+* Bump minimum supported Rust version to 1.70.
 
 ## 0.0.17
 
