@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.18
+
+* Update `h2` for:
+  * [RUSTSEC-2024-0003](https://rustsec.org/advisories/RUSTSEC-2024-0003.html)
+  * [RUSTSEC-2024-0332](https://rustsec.org/advisories/RUSTSEC-2024-0332.html)
+* Update `mio` for [RUSTSEC-2024-0019](https://rustsec.org/advisories/RUSTSEC-2024-0019.html).
+* Update other dependencies.
+
 ## 0.0.17
 
 * Define minimum supported Rust version to be 1.66.
