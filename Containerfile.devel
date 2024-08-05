@@ -1,5 +1,5 @@
 # This Containerfile is for the Makefile to use, not for builds to Dockerhub
-FROM registry.fedoraproject.org/fedora:37
+FROM registry.fedoraproject.org/fedora:40
 LABEL maintainer="Randy Barlow <randy@electronsweatshop.com>"
 
 RUN dnf upgrade -y

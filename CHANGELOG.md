@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.19
+
+* Rebase containers to Fedora 40.
+
 ## 0.0.18
 
 * Update `h2` for:
