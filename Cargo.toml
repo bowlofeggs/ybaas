@@ -2,7 +2,7 @@
 name = "ybaas"
 version = "0.0.19"
 authors = ["Igor Gnatenko <ignatenkobrain@fedoraproject.org>", "Randy Barlow <randy@electronsweatshop.com>"]
-license = "GPL-3.0"
+license = "GPL-3.0-only"
 readme = "README.md"
 repository = "https://github.com/bowlofeggs/ybaas"
 documentation = "https://docs.rs/ybaas"
